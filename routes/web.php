@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+	Route::get('/', function () {
+	    return view('welcome');
+	});
+	
+	
+	Route::prefix('admin')->group(function () {
+		Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
+		Route::resource('categories', CategoriesController::class);
+		
+	});
 
-Route::get('/home', [\App\Http\Controllers\HomeController::class,'index'])->name('home.index');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+	Route::middleware(['auth:sanctum', 'verified'])->get('/home', function () {
+	    return view('dashboard');
+	})->name('dashboard');
