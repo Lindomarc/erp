@@ -256,11 +256,37 @@ return [
 			    ],
 			    [
 				    'text' => 'Categoria',
-				    'url'  => '/admin/categories',
+				    'icon' => 'fas fa-fw fa-box',
+				    'submenu' => [
+					    [
+						    'text' => 'Consultar',
+						    'url'  => '/admin/categories',
+						    'icon' => 'fas fa-fw fa-list-alt',
+					
+					    ],
+					    [
+						    'text' => 'Adicionar',
+						    'url'  => '/admin/categories/create',
+						    'icon' => 'fas fa-fw fa-plus',
+					    ],
+				    ]
 			    ],
 			    [
 				    'text' => 'Unidades',
-				    'url'  => '#',
+				    'icon' => 'fas fa-copy',
+				    'submenu' => [
+					    [
+						    'text' => 'Consultar',
+						    'url'  => '/admin/units',
+						    'icon' => 'fas fa-list-alt',
+					
+					    ],
+					    [
+						    'text' => 'Adicionar',
+						    'url'  => '/admin/units/create',
+						    'icon' => 'fas fa-fw fa-plus',
+					    ],
+				    ]
 			    ],
 		    ],
 	    ],

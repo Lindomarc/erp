@@ -28,7 +28,7 @@
 				'order' => [[1, 'asc']],
 				'columns' => [null, null, null, ['orderable' => false]],
 			];
-			return view('category.index', compact('categories','heads','config'));
+			return view('categories.index', compact('categories','heads','config'));
 		}
 		
 		/**
@@ -38,7 +38,7 @@
 		 */
 		public function create()
 		{
-			return view('category.create');
+			return view('categories.create');
 		}
 		
 		/**
@@ -60,7 +60,7 @@
 			$category->status = true;
 			$category->save();
 			
-			return redirect()->back()->with('message', __('Category Created Successfully'));
+			return redirect(route('categories.index'))->with('message', __('Item foi adicionado!'));
 		}
 		
 		/**
@@ -84,7 +84,7 @@
 		{
 			$category = Category::findOrFail($id);
 			
-			return view('category.edit',compact('category'));
+			return view('categories.edit',compact('category'));
 		}
 		
 		/**
@@ -105,7 +105,7 @@
 			$category->slug = Str::slug($request->name);
 			$category->save();
 			
-			return redirect()->back()->with('message', 'Category Updated Successfully');
+			return redirect(route('categories.index'))->with('message', 'Item foi atualizado!');
 		}
 		
 		/**
