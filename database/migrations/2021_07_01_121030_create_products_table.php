@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
 	        $table->boolean('is_material')->default(0);
 	        $table->decimal('price_buy')->unsigned()->default(0);
 	        $table->decimal('price_sale')->unsigned()->default(0);
-	        $table->boolean('status')->default(1);
+	        $table->boolean('status')->default(true);
 	
 	        $table->integer('category_id')->unsigned();
 	        $table->foreign('category_id')->references('id')->on('categories');

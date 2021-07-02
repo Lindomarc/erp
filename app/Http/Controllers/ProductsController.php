@@ -83,9 +83,9 @@ class ProductsController extends Controller
 	    $product->unit_id = $request->unit_id;
 	    $product->price_buy = $request->price_buy;
 	    $product->price_sale = $request->price_sale;
-	    $product->status = $request->status??false;
-	    $product->is_product = $request->is_product??false;
-	    $product->is_material = $request->is_material??false;
+	    $product->status = !!$request->status??false;
+	    $product->is_product = !!$request->is_product??false;
+	    $product->is_material = !!$request->is_material??false;
 	    $product->save();
 	
 	
