@@ -57,7 +57,6 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-	    
 	    $request->validate([
 		    'name' => 'required|min:3|regex:/^[a-zA-Z ]+$/|unique:products',
 		    'product_code' => 'required',		    
@@ -75,8 +74,8 @@ class ProductsController extends Controller
 			    'visitable'	=> true
 		    ]);
 	    }
-	    
- 	    $product = new Product();
+	
+	    $product = new Product();
 	    $product->name = $request->name;
 	    $product->product_code = $request->product_code;	    
 	    $product->slug = Str::slug($request->name);	    
@@ -85,7 +84,6 @@ class ProductsController extends Controller
 	    $product->price_buy = $request->price_buy;
 	    $product->price_sale = $request->price_sale;
 	    $product->status = $request->status??false;
-	    $product->image = 'test';
 	    $product->is_product = $request->is_product??false;
 	    $product->is_material = $request->is_material??false;
 	    $product->save();

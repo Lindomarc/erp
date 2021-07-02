@@ -20,7 +20,8 @@ class CreateProductImagesTable extends Migration
 	        
             $table->integer('upload_id');
 	        $table->foreign('upload_id')->references('id')->on('uploads');
-            
+	        $table->timestamps();
+	
         });
     }
 
