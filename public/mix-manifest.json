@@ -1,7 +1,5 @@
 {
-    "/js/app.js": "/js/app.js?id=e869045a5c18206ca403",
-    "/css/app.css": "/css/app.css?id=a9013d88c945e22c9300",
-    "/js/custom.js": "/js/custom.js?id=d2a9078f251f1ee7d529",
-    "/vendor/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css": "/vendor/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css?id=37f2cbce3fa4443735e0",
-    "/vendor/bootstrap-switch/dist/js/bootstrap-switch.min.js": "/vendor/bootstrap-switch/dist/js/bootstrap-switch.min.js?id=0da1e8f2e4778d64ecd8"
+    "/js/app.js": "/js/app.js?id=487638b3b42fb9dfd258",
+    "/css/app.css": "/css/app.css?id=b6cf5d25dd9c6e8b4f24",
+    "/js/custom.js": "/js/custom.js?id=d2a9078f251f1ee7d529"
 }
