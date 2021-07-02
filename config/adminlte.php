@@ -235,76 +235,78 @@ return [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
-
-        // Sidebar items:
-        [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
-        ],
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+	
+	    // Sidebar items:
 	    [
-		    'text'    => 'Cadastros',
-		    'icon'    => 'fas fa-fw fa-share',
+		    'type' => 'sidebar-menu-search',
+		    'text' => 'search',
+	    ],
+	    [
+		    'text' => 'blog',
+		    'url' => 'admin/blog',
+		    'can' => 'manage-blog',
+	    ],
+	    ['header' => 'Cadastros'],
+	    [
+		    'text' => 'Produtos',
+		    'url' => '#', 'submenu' => [
+		    [
+			    'text' => 'Consultar',
+			    'url' => '/admin/products',
+			    'icon' => 'fas fa-fw fa-list-alt',
+		
+		    ],
+		    [
+			    'text' => 'Adicionar',
+			    'url' => '/admin/products/create',
+			    'icon' => 'fas fa-fw fa-plus',
+		    ],
+	    ]
+	    ],
+	    [
+		    'text' => 'Categoria',
+		    'icon' => 'fas fa-fw fa-box',
 		    'submenu' => [
 			    [
-				    'text' => 'Produtos',
-				    'url'  => '#','submenu' => [
-				    [
-					    'text' => 'Consultar',
-					    'url'  => '/admin/products',
-					    'icon' => 'fas fa-fw fa-list-alt',
-				
-				    ],
-				    [
-					    'text' => 'Adicionar',
-					    'url'  => '/admin/products/create',
-					    'icon' => 'fas fa-fw fa-plus',
-				    ],
-			    ]
+				    'text' => 'Consultar',
+				    'url' => '/admin/categories',
+				    'icon' => 'fas fa-fw fa-list-alt',
+			
 			    ],
 			    [
-				    'text' => 'Categoria',
-				    'icon' => 'fas fa-fw fa-box',
-				    'submenu' => [
-					    [
-						    'text' => 'Consultar',
-						    'url'  => '/admin/categories',
-						    'icon' => 'fas fa-fw fa-list-alt',
-					
-					    ],
-					    [
-						    'text' => 'Adicionar',
-						    'url'  => '/admin/categories/create',
-						    'icon' => 'fas fa-fw fa-plus',
-					    ],
-				    ]
+				    'text' => 'Adicionar',
+				    'url' => '/admin/categories/create',
+				    'icon' => 'fas fa-fw fa-plus',
+			    ],
+		    ]
+	    ],
+	    [
+		    'text' => 'Unidades',
+		    'icon' => 'fas fa-copy',
+		    'submenu' => [
+			    [
+				    'text' => 'Consultar',
+				    'url' => '/admin/units',
+				    'icon' => 'fas fa-list-alt',
+			
 			    ],
 			    [
-				    'text' => 'Unidades',
-				    'icon' => 'fas fa-copy',
-				    'submenu' => [
-					    [
-						    'text' => 'Consultar',
-						    'url'  => '/admin/units',
-						    'icon' => 'fas fa-list-alt',
-					
-					    ],
-					    [
-						    'text' => 'Adicionar',
-						    'url'  => '/admin/units/create',
-						    'icon' => 'fas fa-fw fa-plus',
-					    ],
-				    ]
+				    'text' => 'Adicionar',
+				    'url' => '/admin/units/create',
+				    'icon' => 'fas fa-fw fa-plus',
 			    ],
+		    ]
+	    ],
+	    [
+		    'text' => 'Cadastros',
+		    'icon' => 'fas fa-fw fa-share',
+		    'submenu' => [
+		
 		    ],
 	    ],
 	    ['header' => 'Avançado'],
 	    [
-		    'text'    => 'Configurações',
+		    'text' => 'Configurações',
 		    'icon'    => 'fas fa-fw fa-cogs',
 		    'submenu' => [
 			    [
