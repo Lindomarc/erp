@@ -18,7 +18,7 @@
             @method('put')
             <div class="row">
                 <div class="col-12 col-sm-4">
-                    <img src="{{asset('storage/uploads/img/empty.png')}}" class="img-fluid product-image" alt="Imagem">
+                    <img src="{{asset('images/empty.png')}}" class="img-fluid product-image" alt="Imagem">
                 </div>
                 <div class="col-12 col-sm-8">
                     <div class="row">
