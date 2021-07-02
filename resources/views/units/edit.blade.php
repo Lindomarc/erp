@@ -1,14 +1,14 @@
 @extends('adminlte::page')
 
-@section('title', __('Unidades'))
+@section('title', __('Editar Unidades'))
 
 @section('content')
-    <x-adminlte-card theme="primary" theme-mode="outline" title="Editar Categoria" class="card-widget ">
-        <form method="POST" action="{{route('units.update', $unity->id)}}">
+    <x-adminlte-card theme="primary" theme-mode="outline" title="Editar Unidades" class="card-widget ">
+        <form method="POST" action="{{route('units.update', $unit->id)}}">
             @csrf
             @method('PUT')
             <x-adminlte-input name="name" label="Nome" placeholder="Nome" 
-                    value="{{ $unity->name }}" 
+                    value="{{ $unit->name }}" 
                     label-class="text-lightblue" 
                     class="col-sm-6">
             </x-adminlte-input>            

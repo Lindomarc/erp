@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', __('Categorias'))
+@section('title', 'Editar Categoria')
 
 @section('content')
     <x-adminlte-card theme="primary" theme-mode="outline" title="Editar Categoria" class="card-widget ">

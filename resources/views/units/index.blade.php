@@ -11,7 +11,7 @@
                 <tr>
                     <td>{{$row->id}} </td>
                     <td>{{$row->name}} </td>
-                    <td><i class="fa {{$row->status?'fa-check-circle':'fa-cogs'}}"></i></td>
+                    <td><i class="fa {{$row->status?'fa-check-circle':''}}"></i></td>
                     <td>
                         <nobr>
                             <div class="btn-group btn-group-sm">

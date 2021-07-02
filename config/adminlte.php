@@ -252,7 +252,19 @@ return [
 		    'submenu' => [
 			    [
 				    'text' => 'Produtos',
-				    'url'  => '#',
+				    'url'  => '#','submenu' => [
+				    [
+					    'text' => 'Consultar',
+					    'url'  => '/admin/products',
+					    'icon' => 'fas fa-fw fa-list-alt',
+				
+				    ],
+				    [
+					    'text' => 'Adicionar',
+					    'url'  => '/admin/products/create',
+					    'icon' => 'fas fa-fw fa-plus',
+				    ],
+			    ]
 			    ],
 			    [
 				    'text' => 'Categoria',
@@ -384,6 +396,11 @@ return [
                     'asset' => false,
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css',
                 ],
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => 'https://cdn.jsdelivr.net/npm/@ttskch/select2-bootstrap4-theme@x.x.x/dist/select2-bootstrap4.min.css',
+                ],
             ],
         ],
         'Chartjs' => [
@@ -421,6 +438,36 @@ return [
                 ],
             ],
         ],
+        'BsCustomFileInput' => [
+            'active' => false,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-radar.min.css',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'vendor/bs-custom-file-input/bs-custom-file-input.min.js',
+                ],
+            ],
+        ],
+	    'BootstrapSwitch' => [
+		    'active' => false,
+		    'files' => [
+			    [
+				    'type' => 'css',
+				    'asset' => true,
+				    'location' => 'vendor/bootstrap-switch/css/bootstrap3/bootstrap-switch.min.css',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => '/vendor/bootstrap-switch/js/bootstrap-switch.min.js',
+			    ],
+		    ],
+	    ],
     ],
 
     /*

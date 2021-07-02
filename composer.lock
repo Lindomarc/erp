@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deffea697f11b6fec3ab9260cef76c59",
+    "content-hash": "1acbb705b320d088ff5c3112a6df6e30",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -213,6 +213,63 @@
                 }
             ],
             "time": "2021-01-20T22:51:39+00:00"
+        },
+        {
+            "name": "coffeecode/cropper",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robsonvleite/cropper.git",
+                "reference": "4c98fa8601ad1dcb3d94a605e7bfa36b7ac5b87e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robsonvleite/cropper/zipball/4c98fa8601ad1dcb3d94a605e7bfa36b7ac5b87e",
+                "reference": "4c98fa8601ad1dcb3d94a605e7bfa36b7ac5b87e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.2",
+                "rosell-dk/webp-convert": "2.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoffeeCode\\Cropper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robson V. Leite",
+                    "email": "cursos@upinside.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "It is a easy and simple PHP image cropper and cache thumb manager",
+            "homepage": "http://www.upinside.com.br",
+            "keywords": [
+                "Coffeecode",
+                "image cache",
+                "image crop",
+                "image thumb",
+                "thumbnails jpg",
+                "thumbnails png",
+                "thumbnails webp",
+                "upload",
+                "webp converter"
+            ],
+            "support": {
+                "issues": "https://github.com/robsonvleite/cropper/issues",
+                "source": "https://github.com/robsonvleite/cropper/tree/1.3.4"
+            },
+            "time": "2021-05-17T11:26:50+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -998,6 +1055,80 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "abbf18d5ab8367f96b3205ca3c89fb2fa598c69e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/abbf18d5ab8367f96b3205ca3c89fb2fa598c69e",
+                "reference": "abbf18d5ab8367f96b3205ca3c89fb2fa598c69e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/image/issues",
+                "source": "https://github.com/Intervention/image/tree/master"
+            },
+            "time": "2019-11-02T09:15:47+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -1875,6 +2006,58 @@
             "time": "2021-01-18T20:58:21+00:00"
         },
         {
+            "name": "lindomarc/utils",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lindomarc/UtilsBr.git",
+                "reference": "118d10fc14ecbf20751cd952ee56cffe0d6e3ac7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lindomarc/UtilsBr/zipball/118d10fc14ecbf20751cd952ee56cffe0d6e3ac7",
+                "reference": "118d10fc14ecbf20751cd952ee56cffe0d6e3ac7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lindomarc\\Utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "lindomar",
+                    "email": "lindomarc@outlook.com"
+                }
+            ],
+            "keywords": [
+                "php",
+                "util"
+            ],
+            "support": {
+                "issues": "https://github.com/Lindomarc/UtilsBr/issues",
+                "source": "https://github.com/Lindomarc/UtilsBr/tree/main"
+            },
+            "time": "2021-07-01T18:05:06+00:00"
+        },
+        {
             "name": "livewire/livewire",
             "version": "v2.5.1",
             "source": {
@@ -2384,6 +2567,140 @@
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
             "time": "2020-12-06T15:14:20+00:00"
+        },
+        {
+            "name": "pharaonic/laravel-readable",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pharaonic/laravel-readable.git",
+                "reference": "42bc9ece47c98ae07397bb8ac77333b71fb32097"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pharaonic/laravel-readable/zipball/42bc9ece47c98ae07397bb8ac77333b71fb32097",
+                "reference": "42bc9ece47c98ae07397bb8ac77333b71fb32097",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=6.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pharaonic\\Laravel\\Readable\\ReadableServiceProvider"
+                    ],
+                    "aliases": {
+                        "Readable": "Pharaonic\\Laravel\\Readable\\Readable"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pharaonic\\Laravel\\Readable\\": "src"
+                },
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raggi",
+                    "email": "support@pharaonic.io",
+                    "homepage": "https://pharaonic.io"
+                }
+            ],
+            "description": "Laravel - Readable Number (Integer|decimal) & DateTime & Time Length & File Size.",
+            "keywords": [
+                "human readable",
+                "laravel",
+                "pharaonic",
+                "php",
+                "readable"
+            ],
+            "support": {
+                "issues": "https://github.com/Pharaonic/laravel-readable/issues",
+                "source": "https://github.com/Pharaonic/laravel-readable/tree/1.0.4"
+            },
+            "time": "2021-05-09T13:30:55+00:00"
+        },
+        {
+            "name": "pharaonic/laravel-uploader",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pharaonic/laravel-uploader.git",
+                "reference": "62baf382ae784dd0ef32bfbf706764ea4c3cc5cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pharaonic/laravel-uploader/zipball/62baf382ae784dd0ef32bfbf706764ea4c3cc5cb",
+                "reference": "62baf382ae784dd0ef32bfbf706764ea4c3cc5cb",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": ">=2.5",
+                "laravel/framework": ">=6.0",
+                "pharaonic/laravel-readable": ">=1.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pharaonic\\Laravel\\Uploader\\UploaderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pharaonic\\Laravel\\Uploader\\": "src"
+                },
+                "files": [
+                    "src/Helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moamen Eltouny (Raggi)",
+                    "email": "raggi@raggitech.com"
+                }
+            ],
+            "description": "Laravel Uploader to upload files and handling visibility.",
+            "keywords": [
+                "larave files",
+                "laravel",
+                "laravel uploader",
+                "laravel uploads",
+                "php",
+                "secure",
+                "uploader"
+            ],
+            "support": {
+                "issues": "https://github.com/Pharaonic/laravel-uploader/issues",
+                "source": "https://github.com/Pharaonic/laravel-uploader/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://liberapay.com/Pharaonic",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://www.patreon.com/Pharaonic",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-05-27T21:48:05+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3099,6 +3416,165 @@
             "time": "2020-08-18T17:17:46+00:00"
         },
         {
+            "name": "rosell-dk/image-mime-type-guesser",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rosell-dk/image-mime-type-guesser.git",
+                "reference": "5915934d66a7869cecc7141adf90581aad81023d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rosell-dk/image-mime-type-guesser/zipball/5915934d66a7869cecc7141adf90581aad81023d",
+                "reference": "5915934d66a7869cecc7141adf90581aad81023d",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11",
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "scripts-descriptions": {
+                    "ci": "Run tests before CI",
+                    "phpcs": "Checks coding styles (PSR2) of file/dir, which you must supply. To check all, supply 'src'",
+                    "phpcbf": "Fix coding styles (PSR2) of file/dir, which you must supply. To fix all, supply 'src'",
+                    "cs-fix-all": "Fix the coding style of all the source files, to comply with the PSR-2 coding standard",
+                    "cs-fix": "Fix the coding style of a PHP file or directory, which you must specify.",
+                    "test": "Launches the preconfigured PHPUnit"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ImageMimeTypeGuesser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bjørn Rosell",
+                    "homepage": "https://www.bitwise-it.dk/contact",
+                    "role": "Project Author"
+                }
+            ],
+            "description": "Guess mime type of images",
+            "keywords": [
+                "image",
+                "images",
+                "mime",
+                "mime type"
+            ],
+            "support": {
+                "issues": "https://github.com/rosell-dk/image-mime-type-guesser/issues",
+                "source": "https://github.com/rosell-dk/image-mime-type-guesser/tree/0.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/rosell-dk",
+                    "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/rosell",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2021-06-30T19:14:59+00:00"
+        },
+        {
+            "name": "rosell-dk/webp-convert",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rosell-dk/webp-convert.git",
+                "reference": "b349da7b6e04a4c269bbbbf7c279e0e433a71fd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rosell-dk/webp-convert/zipball/b349da7b6e04a4c269bbbbf7c279e0e433a71fd0",
+                "reference": "b349da7b6e04a4c269bbbbf7c279e0e433a71fd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 | ^7.0 | ^8.0",
+                "rosell-dk/image-mime-type-guesser": "^0.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.11",
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "suggest": {
+                "ext-gd": "to use GD extension for converting. Note: Gd must be compiled with webp support",
+                "ext-imagick": "to use Imagick extension for converting. Note: Gd must be compiled with webp support",
+                "ext-vips": "to use Vips extension for converting.",
+                "php-stan/php-stan": "Suggested for dev, in order to analyse code before committing"
+            },
+            "type": "library",
+            "extra": {
+                "scripts-descriptions": {
+                    "ci": "Run tests before CI",
+                    "phpcs": "Checks coding styles (PSR2) of file/dir, which you must supply. To check all, supply 'src'",
+                    "phpcbf": "Fix coding styles (PSR2) of file/dir, which you must supply. To fix all, supply 'src'",
+                    "cs-fix-all": "Fix the coding style of all the source files, to comply with the PSR-2 coding standard",
+                    "cs-fix": "Fix the coding style of a PHP file or directory, which you must specify.",
+                    "test": "Launches the preconfigured PHPUnit"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WebPConvert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bjørn Rosell",
+                    "homepage": "https://www.bitwise-it.dk/contact",
+                    "role": "Project Author"
+                },
+                {
+                    "name": "Martin Folkers",
+                    "homepage": "https://twobrain.io",
+                    "role": "Collaborator"
+                }
+            ],
+            "description": "Convert JPEG & PNG to WebP with PHP",
+            "keywords": [
+                "Webp",
+                "cwebp",
+                "gd",
+                "image conversion",
+                "images",
+                "imagick",
+                "jpg",
+                "jpg2webp",
+                "png",
+                "png2webp"
+            ],
+            "support": {
+                "issues": "https://github.com/rosell-dk/webp-convert/issues",
+                "source": "https://github.com/rosell-dk/webp-convert/tree/2.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/rosell-dk",
+                    "type": "github"
+                },
+                {
+                    "url": "https://ko-fi.com/rosell",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2021-05-06T15:18:48+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.2.7",
             "source": {
@@ -3405,16 +3881,16 @@
         },
         {
             "name": "symfony/error-handler",
-            "version": "v5.3.0",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "0e6768b8c0dcef26df087df2bbbaa143867a59b2"
+                "reference": "43323e79c80719e8a4674e33484bca98270d223f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/0e6768b8c0dcef26df087df2bbbaa143867a59b2",
-                "reference": "0e6768b8c0dcef26df087df2bbbaa143867a59b2",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/43323e79c80719e8a4674e33484bca98270d223f",
+                "reference": "43323e79c80719e8a4674e33484bca98270d223f",
                 "shasum": ""
             },
             "require": {
@@ -3454,7 +3930,7 @@
             "description": "Provides tools to manage errors and ease debugging PHP code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/error-handler/tree/v5.3.0"
+                "source": "https://github.com/symfony/error-handler/tree/v5.3.3"
             },
             "funding": [
                 {
@@ -3470,7 +3946,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-24T08:13:00+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3777,16 +4253,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "7b6dd714d95106b831aaa7f3c9c612ab886516bd"
+                "reference": "0e45ab1574caa0460d9190871a8ce47539e40ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/7b6dd714d95106b831aaa7f3c9c612ab886516bd",
-                "reference": "7b6dd714d95106b831aaa7f3c9c612ab886516bd",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/0e45ab1574caa0460d9190871a8ce47539e40ccf",
+                "reference": "0e45ab1574caa0460d9190871a8ce47539e40ccf",
                 "shasum": ""
             },
             "require": {
@@ -3830,7 +4306,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v5.3.2"
+                "source": "https://github.com/symfony/http-foundation/tree/v5.3.3"
             },
             "funding": [
                 {
@@ -3846,20 +4322,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-12T10:15:17+00:00"
+            "time": "2021-06-27T09:19:40+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "e7021165d9dbfb4051296b8de827e92c8a7b5c87"
+                "reference": "90ad9f4b21ddcb8ebe9faadfcca54929ad23f9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/e7021165d9dbfb4051296b8de827e92c8a7b5c87",
-                "reference": "e7021165d9dbfb4051296b8de827e92c8a7b5c87",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/90ad9f4b21ddcb8ebe9faadfcca54929ad23f9f8",
+                "reference": "90ad9f4b21ddcb8ebe9faadfcca54929ad23f9f8",
                 "shasum": ""
             },
             "require": {
@@ -3942,7 +4418,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v5.3.2"
+                "source": "https://github.com/symfony/http-kernel/tree/v5.3.3"
             },
             "funding": [
                 {
@@ -3958,7 +4434,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-17T14:18:27+00:00"
+            "time": "2021-06-30T08:27:49+00:00"
         },
         {
             "name": "symfony/mime",
@@ -5005,16 +5481,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0"
+                "reference": "bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/0732e97e41c0a590f77e231afc16a327375d50b0",
-                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0",
+                "url": "https://api.github.com/repos/symfony/string/zipball/bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1",
+                "reference": "bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1",
                 "shasum": ""
             },
             "require": {
@@ -5068,7 +5544,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v5.3.2"
+                "source": "https://github.com/symfony/string/tree/v5.3.3"
             },
             "funding": [
                 {
@@ -5084,20 +5560,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-27T11:44:38+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "7e2603bcc598e14804c4d2359d8dc4ee3c40391b"
+                "reference": "380b8c9e944d0e364b25f28e8e555241eb49c01c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/7e2603bcc598e14804c4d2359d8dc4ee3c40391b",
-                "reference": "7e2603bcc598e14804c4d2359d8dc4ee3c40391b",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/380b8c9e944d0e364b25f28e8e555241eb49c01c",
+                "reference": "380b8c9e944d0e364b25f28e8e555241eb49c01c",
                 "shasum": ""
             },
             "require": {
@@ -5163,7 +5639,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v5.3.2"
+                "source": "https://github.com/symfony/translation/tree/v5.3.3"
             },
             "funding": [
                 {
@@ -5179,7 +5655,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-27T12:22:47+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -5261,16 +5737,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "905a22c68b292ffb6f20d7636c36b220d1fba5ae"
+                "reference": "46aa709affb9ad3355bd7a810f9662d71025c384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/905a22c68b292ffb6f20d7636c36b220d1fba5ae",
-                "reference": "905a22c68b292ffb6f20d7636c36b220d1fba5ae",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/46aa709affb9ad3355bd7a810f9662d71025c384",
+                "reference": "46aa709affb9ad3355bd7a810f9662d71025c384",
                 "shasum": ""
             },
             "require": {
@@ -5329,7 +5805,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.3.2"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.3.3"
             },
             "funding": [
                 {
@@ -5345,7 +5821,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-24T08:13:00+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -8302,7 +8778,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lindomarc/utils": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

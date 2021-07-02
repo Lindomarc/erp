@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
 use App\Models\Unit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -49,8 +48,6 @@ class UnitsController extends Controller
      */
     public function store(Request $request)
     {
-	
-	
 	    $request->validate([
 		    'name' => 'required|min:3|max:80|unique:categories'
 	    ]);
@@ -83,7 +80,8 @@ class UnitsController extends Controller
      */
     public function edit($id)
     {
-        //
+	    $unit = Unit::findOrFail($id);
+	    return view('units.edit', compact('unit'));
     }
 
     /**
@@ -98,13 +96,12 @@ class UnitsController extends Controller
 	    $request->validate([
 		    'name' => 'required|min:2|unique:units|regex:/^[a-zA-Z ]+$/',
 	    ]);
-	    $unit = new Unit();
+	    $unit = Unit::findOrFail($id);
 	    $unit->name = $request->name;
 	    $unit->slug = Str::slug($request->name);
-	    $unit->status = 1;
 	    $unit->save();
 	
-	    return redirect()->back()->with('message', 'Item foi atualizado!');
+	    return redirect(route('units.index'))->with('message', 'Item foi atualizado!');
     }
 
     /**
@@ -115,7 +112,7 @@ class UnitsController extends Controller
      */
     public function destroy($id)
     {
-    	$unit = Unit::find($id);
+	    $unit = Unit::findOrFail($id);
 	    $unit->delete();
 	    return redirect()->back();
 	

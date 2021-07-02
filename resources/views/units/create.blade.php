@@ -4,7 +4,7 @@
 
 @section('content')
     <x-adminlte-card theme="primary" theme-mode="outline" title="Adicionar Unidade" class="card-widget ">
-        <form method="POST" action="{{route('categories.store')}}">
+        <form method="POST" action="{{route('units.store')}}">
             @csrf
             <x-adminlte-input name="name" label="Nome" placeholder=""
                     label-class="text-lightblue"

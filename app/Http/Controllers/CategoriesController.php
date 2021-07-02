@@ -97,7 +97,7 @@
 		public function update(Request $request, $id)
 		{
 			$request->validate([
-				'name' => 'required|min:3|regex:/^[a-zA-Z ]+$/',
+				'name' => 'required|min:3|max:80|regex:/^[a-zA-Z ]+$/',
 			]);
 			
 			$category = Category::findOrFail($id);
