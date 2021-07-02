@@ -17,7 +17,7 @@ use \App\Http\Controllers\ProductsController;
 */
 
 	Route::get('/', function () {
-	    return view('welcome');
+	    return view('vendor.adminlte.auth.login');
 	});
 	
 	
