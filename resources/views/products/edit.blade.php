@@ -57,9 +57,9 @@
                         @php
                         $checked = 'checked';
                         @endphp
-                        <x-adminlte-input-switch value  name="status" label="Ativo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>
-                        <x-adminlte-input-switch value="{{ old('is_product',$product->is_product)??0 }}" name="is_product" label="Produto" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>
-                        <x-adminlte-input-switch name="is_material" label="Insumo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>
+                        <x-adminlte-input-switch value  name="status" label="Ativo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" />
+                        {{--<x-adminlte-input-switch value="{{ old('is_product',$product->is_product)??0 }}" name="is_product" label="Produto" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>--}}
+                        {{--<x-adminlte-input-switch name="is_material" label="Insumo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>--}}
 
 
                     </div>

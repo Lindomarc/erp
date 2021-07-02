@@ -54,9 +54,9 @@
                         {{-- Upload Image --}}
                         <x-adminlte-input-file name="image" label="Imagem" label-class="text-lightblue" placeholder="Escolha a imagem do produto..." fgroup-class="col-12  col-md-6" accept="image/*" disable-feedback/>
                         {{-- Status --}}
-                        <x-adminlte-input-switch name="status" label="Ativo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>
-                        <x-adminlte-input-switch name="is_product" label="Produto" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>
-                        <x-adminlte-input-switch name="is_material" label="Insumo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>
+                        <x-adminlte-input-switch name="status" label="Ativo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2"/>
+                        {{--<x-adminlte-input-switch name="is_product" label="Produto" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>--}}
+                        {{--<x-adminlte-input-switch name="is_material" label="Insumo" label-class="text-lightblue" data-on-text="Sim" data-off-text="Não" data-on-color="teal" fgroup-class="col-2" checked/>--}}
                     </div>
                 </div>
             </div>
