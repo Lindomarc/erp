@@ -235,7 +235,7 @@ return [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
-	
+
 	    // Sidebar items:
 	    [
 		    'type' => 'sidebar-menu-search',
@@ -254,7 +254,7 @@ return [
 			    'text' => 'Consultar',
 			    'url' => '/admin/products',
 			    'icon' => 'fas fa-fw fa-list-alt',
-		
+
 		    ],
 		    [
 			    'text' => 'Adicionar',
@@ -271,7 +271,7 @@ return [
 				    'text' => 'Consultar',
 				    'url' => '/admin/categories',
 				    'icon' => 'fas fa-fw fa-list-alt',
-			
+
 			    ],
 			    [
 				    'text' => 'Adicionar',
@@ -288,7 +288,7 @@ return [
 				    'text' => 'Consultar',
 				    'url' => '/admin/units',
 				    'icon' => 'fas fa-list-alt',
-			
+
 			    ],
 			    [
 				    'text' => 'Adicionar',
@@ -301,7 +301,7 @@ return [
 		    'text' => 'Cadastros',
 		    'icon' => 'fas fa-fw fa-share',
 		    'submenu' => [
-		
+
 		    ],
 	    ],
 	    ['header' => 'Avançado'],
@@ -326,8 +326,8 @@ return [
 			    ]
 		    ]
 	    ]
-	    
-        
+
+
     ],
 
     /*
@@ -385,6 +385,51 @@ return [
                 ],
             ],
         ],
+	    'DatatablesPlugins' => [
+		    'active' => true,
+		    'files' => [
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/buttons/js/dataTables.buttons.min.js',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/buttons/js/buttons.bootstrap4.min.js',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/buttons/js/buttons.html5.min.js',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/buttons/js/buttons.print.min.js',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/jszip/jszip.min.js',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/pdfmake/pdfmake.min.js',
+			    ],
+			    [
+				    'type' => 'js',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/pdfmake/vfs_fonts.js',
+			    ],
+			    [
+				    'type' => 'css',
+				    'asset' => true,
+				    'location' => 'vendor/datatables-plugins/buttons/css/buttons.bootstrap4.min.css',
+			    ],
+		    ],
+	    ],
         'Select2' => [
             'active' => false,
             'files' => [

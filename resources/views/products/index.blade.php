@@ -7,7 +7,7 @@
 
 @section('content')
     <x-adminlte-card theme="primary" theme-mode="outline" title="Lista de itens cadastrados">
-        <x-adminlte-datatable id="table1" :heads="$heads">
+        <x-adminlte-datatable id="table1" :heads="$heads" :config="$config">
             @foreach($products ?? [] as   $row)
                 <tr>
                     <td>{{$row->id}} </td>

@@ -37,13 +37,13 @@
 {{-- Add plugin initialization and configuration code --}}
 
 @push('js')
-<script>
+{{-- <script>
 
     $(() => {
-        $('#{{ $id }}').DataTable( @json($config) );
+        $('#{{ $id }}').DataTable(  );
     })
 
-</script>
+</script> --}}
 @endpush
 
 {{-- Add CSS styling --}}
