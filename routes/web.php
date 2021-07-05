@@ -27,6 +27,7 @@ use \App\Http\Controllers\ProductsController;
 		Route::resource('units', UnitsController::class);
 		Route::resource('products', ProductsController::class);
 		
+		
 	});
 
 	Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

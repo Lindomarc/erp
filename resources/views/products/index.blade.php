@@ -20,7 +20,7 @@
                                 <button class="btn btn-danger" type="submit" data-id="{{$row->id}}" onclick="deleteTag({{ $row->id }}, this)">
                                     <i class="fa fa-trash"></i>
                                 </button>
-                                <form id="delete-form-{{ $row->id }}" action="{{ route('products.destroy',$row->id) }}" method="POST" style="display: none;">
+                                <form id="delete-form-{{ $row->id }}" action="{{ route('products.destroy',['product'=> $row->id]) }}" method="POST" style="display: none;">
                                     @csrf
                                     @method('DELETE')
                                 </form>

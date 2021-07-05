@@ -20,6 +20,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
+    	
 	    $products = Product::all(['id', 'name', 'status']);
 	
 	    $heads = [
@@ -145,8 +146,18 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Product $product)
     {
-        //
+
+
+	    if($product->delete()){
+		    session()->flash('success',__('Successfully removed'));
+		
+		    return redirect(route('products.index'));
+        }
+	    session()->flash('error',__('Item has not been removed'));
+	
+	    return  redirect()->back();
+        
     }
 }

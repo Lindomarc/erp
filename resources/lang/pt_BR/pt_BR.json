@@ -2,6 +2,7 @@
     "30 Days": "30 dias",
     "60 Days": "60 dias",
     "90 Days": "90 dias",
+    "Item has not been removed" : "Item não foi removido",
     ":amount Total": "Total :amount",
     ":days day trial": ":days day trial",
     ":resource Details": ":resource detalhes",
